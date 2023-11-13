@@ -6,37 +6,35 @@
     <title>p3</title>
     <link rel="stylesheet" href="../style/style.css">
     <style>
-        #col_1{
-            width: 66.66%;
-            padding: 1.25em;
-        }
-        #col_2{
+        section{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            width: 33.33%;
+        }
+        section div{
+            width: 100%;
+        }
+        #row_1, #row_2{
             padding: 1.25em;
         }
-        #col_2 div{
-            margin:0 1em;
-            padding: 8em 0 0 0;
+        #row_1{
+            padding-right: 33.33%;
+            overflow: hidden;
+            height: 168px;
         }
-        h3,p{
-            font-size: 2.375em;
-        }
-        h3{
-            margin: 0 0 3em 0;
-            border-bottom: 2px solid black;
-        }
-        #col_2 a div, #button div{
-            color: white;
-            background-color: black;
+        
+        #cont_img img{
             width: 100%;
-            text-align: center;
-            letter-spacing: .4em;
-            font-size: 2.375em;
-            padding: 1.5em;
+            height: 168px;
+            object-fit: cover;
+            object-position: center;
         }
+        #row_2{
+             padding-left: 33%;
+        }
+        #row_2 p{
+            font-size: 2.375em;
+        }
+        
     </style>
 </head>
 <body>
@@ -47,7 +45,7 @@
         </hgroup>
     </header>
     <nav>
-        <a href="#">link1</a>
+        <a href="pag1.html">link1</a>
         <a href="#">link2</a>
         <a href="#">link3</a>
         <a href="#">link4</a>
@@ -57,15 +55,14 @@
             <img src="../img/header_banner.png" alt="">
         </aside>
         <section>
-            <div id="col_1">
-                <img src="../img/Rectangle_2.png" alt="">
-            </div>
-            <div id="col_2">
-                <div>
-                    <h3>Worem ipsum.</h3>
-                    <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim.</p>
+            <div id="row_1">
+                <div id="cont_img">
+                    <img src="../img/b2.jpg" alt="">
                 </div>
-                <a id="button" href=""><div>BEEF</div></a>
+            </div>
+            <div id="row_2">
+                <p>Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
+                <p>Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. </p>
             </div>
         </section>
     </main>
